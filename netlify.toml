@@ -1,0 +1,34 @@
+[build]
+command = "next build"
+publish = ".next"
+
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+# [[redirects]]
+# from = "/_nextRuntimeV4ImageHandler"
+# # replicate runtime V4 image handler
+# # https://github.com/netlify/next-runtime/blob/637e08c3f3437e5e302ec230b8c849bb61495566/packages/runtime/src/helpers/functions.ts#L254-L259
+# query = { url = ":url", w = ":width", q = ":quality" }
+# to = "/_ipx/w_:width,q_:quality/:url"
+# status = 301
+
+
+[functions]
+directory = "netlify/functions"
+included_files = [
+  "static/**",
+  # this is setup for testing regressions on EEXIST error:
+  # next.config.js -> experimental.outputFileTracingIncludes makes next.js
+  # to add those files to .next/standalone directory and we again add those
+  # files to server handler with this configuration and this makes sure
+  # there is no errors happening
+  "public/**",
+  # this is setup for testing regressions on EEXIST error:
+  # next.js will output node_modules by default to .next/standalone
+  # this makes sure we test scenario when we additionally copy extra files
+  # to shared directory and make sure it's not causing EEXIST errors
+  # added package is not being outputted by next.js by default
+  "node_modules/js-tokens/**",
+]
