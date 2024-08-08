@@ -4,6 +4,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  basePath: "/base/path",
   experimental: {
     outputFileTracingIncludes: {
       "/": ["public/**"],
