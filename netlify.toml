@@ -32,3 +32,23 @@ included_files = [
   # added package is not being outputted by next.js by default
   "node_modules/js-tokens/**",
 ]
+
+[images]
+remote_images = [
+  "https://img.etimg.com/.*",
+  "https://assets.vogue.com/.*",
+  "https://m.media-amazon.com/.*",
+  "https://upload.wikimedia.org/.*",
+  "https://premium-storefronts.s3.amazon.com/.*",
+  "https://premium-storefronts.s3.amazonaws.com/.*",
+  "https://teespring-storecontent.s3.amazonaws.com/.*",
+  "https://vangogh.teedown.com/.*",
+  "https://vangogh.teespring.com/.*",
+  "https://images.teedown.com/.*",
+  "https://images.teespring.com/.*",
+  "https://www.paypalobjects.com/.*",
+  "https://teespring-ass.s3.amazonaws.com/.*",
+  "https://flagcdn.com/.*",
+  "https://d1b2zzpxewkr9z.cloudfront.net/.*",
+  "https://dslv9ilpbe7p1.cloudfront.net/.*",
+]
