@@ -4,7 +4,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  basePath: "/base/path",
+  // basePath: "/base/path",
   experimental: {
     outputFileTracingIncludes: {
       "/": ["public/**"],
@@ -24,9 +24,22 @@ const nextConfig = {
     ],
     domains: [
       "images.pexels.com",
+
+      "img.etimg.com",
+      "assets.vogue.com",
+      "m.media-amazon.com",
+      "upload.wikimedia.org",
+      "premium-storefronts.s3.amazon.com",
       "premium-storefronts.s3.amazonaws.com",
-      "images.teespring.com",
       "teespring-storecontent.s3.amazonaws.com",
+      "vangogh.teedown.com",
+      "vangogh.teespring.com",
+      "images.teedown.com",
+      "images.teespring.com",
+      "www.paypalobjects.com",
+      "teespring-ass.s3.amazonaws.com",
+      "flagcdn.com",
+      "d1b2zzpxewkr9z.cloudfront.net",
       "dslv9ilpbe7p1.cloudfront.net",
     ],
     // x /_next/image?q=75&url=https%3A%2F%2Fpremium-storefronts.s3.amazonaws.com%2Fstorefronts%2Fbear-official%2Fassets%2Fbg_home_banner.png&w=3840
