@@ -7,9 +7,12 @@
     "build": "next build"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "5.7.0-ipx.0",
+    "@netlify/plugin-nextjs": "file:netlify-plugin-nextjs-5.6.0.tgz",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "overrides": {
+    "@netlify/ipx": "file:../../../netlify-ipx-1.4.7-no-odb.tgz"
   }
 }
