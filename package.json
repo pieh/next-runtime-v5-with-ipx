@@ -13,6 +13,6 @@
     "react-dom": "18.2.0"
   },
   "overrides": {
-    "@netlify/ipx": "file:../../../netlify-ipx-1.4.7-no-odb.tgz"
+    "@netlify/ipx": "file:netlify-ipx-1.4.7-no-odb.tgz"
   }
 }
